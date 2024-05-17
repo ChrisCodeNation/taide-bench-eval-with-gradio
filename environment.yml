@@ -1,0 +1,23 @@
+name: taide-bench
+channels:
+  - nvidia/label/cuda-12.1.0
+  - nvidia
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch::pytorch
+  - pytorch::pytorch-cuda=12.1
+  - cuda
+  - conda-forge::pkg-config
+  - pip:
+    - datasets
+    - fire
+    - ipython
+    - protobuf
+    - safetensors
+    - tqdm
+    - openai
+    - sentencepiece
+    - tokenizers
+    - transformers
+    - accelerate
